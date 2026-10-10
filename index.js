@@ -2,14 +2,14 @@ const bedrock = require('bedrock-protocol')
 const http = require('http')
 
 // ---------- CONFIG (set these as environment variables on Render/Railway) ----------
-const HOST = process.env.MC_HOST || 'play.yourserver.net'
+const HOST = process.env.MC_HOST || 'play.noblerealms.net'
 const PORT = parseInt(process.env.MC_PORT || '19132', 10)
-const ACCOUNT = process.env.MC_ACCOUNT || 'bot-account'          // any label, used for the token cache name
-const OWNER = (process.env.OWNER_GAMERTAG || 'YourGamertag').toLowerCase() // only this player can command the bot
-const VERSION = process.env.MC_VERSION || undefined               // e.g. "1.21.50" if auto-detect fails
+const ACCOUNT = process.env.MC_ACCOUNT || 'Dev7Chowdary'          // any label, used for the token cache name
+const OWNER = (process.env.OWNER_GAMERTAG || 'Dev7Chowdary').toLowerCase() // only this player can command the bot
+const VERSION = process.env.MC_VERSION || 26.52               // e.g. "1.21.50" if auto-detect fails
 const AUTH_DIR = process.env.AUTH_DIR || './auth'                 // point this at a persistent volume
 const PREFIX = '!'
-const AFK_COMMAND = process.env.AFK_COMMAND || ''                 // e.g. "/warp farm" - runs once after every join
+const AFK_COMMAND = process.env.AFK_COMMAND || '/home 4'                 // e.g. "/warp farm" - runs once after every join
 // ------------------------------------------------------------------------------------
 
 let client = null
